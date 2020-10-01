@@ -28,11 +28,11 @@ $ curl http://localhost:3000/?url=www.google.com > google.png
 Here is the complete usage documentation, also accessible on `/usage.html`:
 
 ```
-# Take a screenshot
+# Take a screenshot by 
 GET /?url=www.google.com
 # Return a 1024x600 PNG screenshot of the www.google.com homepage
 
-# Custom viewport size
+# get Custom viewport size 
 GET /?url=www.google.com&width=800&height=600
 # Return a 800x600 PNG screenshot of the www.google.com homepage
 
@@ -95,7 +95,7 @@ rasterizer:
 
 ## Asynchronous Usage Example
 
-Here is an example application that takes asynchronous screenshots of a list of websites at regular intervals and saves them to disk:
+Here is an example for application that takes asynchronous screenshots of a list of websites at regular intervals and saves them to disk:
 
 ```js
 var http = require('http');
